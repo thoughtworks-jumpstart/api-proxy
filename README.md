@@ -12,7 +12,7 @@ Useful for proxying requests to APIs while hiding sensitive API keys.
 
 2. Start Caddy with these environment variables:
 
-    bash -c 'source env.sh.secret; caddy'
+       bash -c 'source env.sh.secret; caddy'
 
 [Caddy]: https://caddyserver.com/
 [Nix]: https://nixos.org/nix/
