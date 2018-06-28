@@ -4,7 +4,7 @@ proxy /newsapi.org https://newsapi.org/?apiKey={$NEWSAPI_API_KEY} {
 	without /newsapi.org
 }
 
-proxy /thecatapi.com http://thecatapi.com/?api_key={$CATAPI_API_KEY} {
+proxy /thecatapi.com https://thecatapi.com/?api_key={$CATAPI_API_KEY} {
 	without /thecatapi.com
 }
 
