@@ -4,15 +4,22 @@ Useful for proxying requests to APIs while hiding sensitive API keys.
 
 ## Setup
 
-1. Install [Caddy][]. If you're using [Nix][], `nix-shell` will do that for
-   you.
+1. Install [Caddy][]
 
-1. Copy `./env.sh.sample` to `./env.sh.secret` and update the environment
-   variables for the various API keys.
+   - If you're using [Nix][], `nix-shell` will do that for you
 
-1. Start Caddy with these environment variables:
+2. Copy `config.sample` to `config` and update the environment
+   variables for the host name and various API keys.
 
-       bash -c 'source env.sh.secret; caddy'
+3. Generate the Caddyfile
+
+       make Caddyfile
+
+4. Start caddy
+
+       make start
+
+Use `make reload` to gracefully restart Caddy when the Caddyfile changes.
 
 [Caddy]: https://caddyserver.com/
 [Nix]: https://nixos.org/nix/
